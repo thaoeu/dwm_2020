@@ -69,12 +69,11 @@ static const char scratchpadname[] 	=	"scratchpad";
 static const char *scratchpadcmd[]	=	{ "st", "-t", scratchpadname, "-g", "56x35", NULL };
 static const char *termcmd[]		=	{ "st", NULL };
 static const char *konsole[]		=	{ "konsole", NULL };
-static const char *screenshot[]		=	{ "deepin-screenshot", NULL };
 //static const char *krunner[]		=	{ "krunner", NULL };
 static const char *firefox[]		=	{ "firefox", NULL };
 static const char *librecad[]		=	{ "librecad", NULL };
-static const char *anki[]		=	{ "anki", NULL };
-static const char *oud[]		=	{ "electron-netease-cloud-music", NULL};
+static const char *anki[]			=	{ "anki", NULL };
+static const char *oud[]			=	{ "electron-netease-cloud-music", NULL};
 static const char *vivaldi[]		=	{ "chromium", NULL };
 
 /******
@@ -83,10 +82,11 @@ Scripts
 static const char *keynav[]		=	{ "/home/qj/Script/keynav.sh", NULL };
 static const char *ranger[]		=	{ "/home/qj/Script/st-ranger.sh", NULL };
 static const char *trayer[]		=	{ "/home/qj/Script/trayer.sh", NULL };
+static const char *screenshot[]	=	{ "/home/qj/Script/screenshot.sh", NULL };
 static const char *fcitx[]		=	{ "/home/qj/Script/fcitx.sh", NULL };
 static const char *WpCh[]		=	{ "/home/qj/Script/wp-change.sh", NULL };
 static const char *VolUp[]		=	{ "/home/qj/Script/vol-up.sh", NULL };
-static const char *VolDown[]		=	{ "/home/qj/Script/vol-down.sh", NULL };
+static const char *VolDown[]	=	{ "/home/qj/Script/vol-down.sh", NULL };
 static const char *Mute[]		=	{ "/home/qj/Script/VolMute.sh", NULL };
 static const char *PlNext[]		=	{ "/home/qj/Script/Play-Next.sh", NULL };
 static const char *PlPrev[]		=	{ "/home/qj/Script/Play-Prev.sh", NULL };
@@ -101,16 +101,16 @@ static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,			XK_Return,	spawn,		{.v = termcmd } },
 	{ MODKEY,                       XK_space,	spawn,		{.v = dmenucmd } },
-	{ MODKEY|ShiftMask,		XK_space,	spawn,		{.v = fcitx } },
+	{ MODKEY|ShiftMask,				XK_space,	spawn,		{.v = fcitx } },
 	{ MODKEY,			XK_Insert,	spawn,		{.v = WpCh   } },
 	{ MODKEY,			XK_t,		spawn,		{.v = konsole } },
 	{ MODKEY,                       XK_h,		focusstack,	{.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_h,		zoom,		{0} },
 	{ MODKEY,                       XK_l,		focusstack,	{.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_l,		zoom,		{0} },
-	{ MODKEY,			XK_e,		spawn,		{.v = ranger } },
-	{ MODKEY,			XK_m,		spawn,		{.v = anki } },
-	{ MODKEY|ShiftMask,		XK_m,		spawn,		{.v = oud } },
+	{ MODKEY,						XK_e,		spawn,		{.v = ranger } },
+	{ MODKEY,						XK_m,		spawn,		{.v = anki } },
+	{ MODKEY|ShiftMask,				XK_m,		spawn,		{.v = oud } },
 	{ MODKEY,                       XK_a,		setlayout,	{.v = &layouts[1]} },
 	{ MODKEY,                       XK_o,		setlayout,	{.v = &layouts[0]} },
 	{ MODKEY,                       XK_b,		togglebar,	{0} },
