@@ -35,6 +35,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            0,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "electron-netease-cloud-music",	NULL,	NULL,	1 << 8,	0,			-1	},
 };
 
 /* layout(s) */
@@ -79,23 +80,23 @@ static const char *vivaldi[]		=	{ "chromium", NULL };
 /******
 Scripts
 ******/
-static const char *keynav[]		=	{ "/home/qj/Script/keynav.sh", NULL };
-static const char *ranger[]		=	{ "/home/qj/Script/st-ranger.sh", NULL };
-static const char *trayer[]		=	{ "/home/qj/Script/trayer.sh", NULL };
-static const char *screenshot[]	=	{ "/home/qj/Script/screenshot.sh", NULL };
-static const char *fcitx[]		=	{ "/home/qj/Script/fcitx.sh", NULL };
-static const char *WpCh[]		=	{ "/home/qj/Script/wp-change.sh", NULL };
-static const char *VolUp[]		=	{ "/home/qj/Script/vol-up.sh", NULL };
-static const char *VolDown[]	=	{ "/home/qj/Script/vol-down.sh", NULL };
-static const char *Mute[]		=	{ "/home/qj/Script/VolMute.sh", NULL };
-static const char *PlNext[]		=	{ "/home/qj/Script/Play-Next.sh", NULL };
-static const char *PlPrev[]		=	{ "/home/qj/Script/Play-Prev.sh", NULL };
-static const char *Pause[]		=	{ "/home/qj/Script/Play-pause.sh", NULL };
-static const char *Stop[]		=	{ "/home/qj/Script/Play-Stop.sh", NULL };
-static const char *Up1[]		=	{ "/home/qj/Script/vol1u.sh", NULL };
-static const char *Dn1[]		=	{ "/home/qj/Script/vol1d.sh", NULL };
-static const char *LigInc[]		=	{ "/home/qj/Script/LightInc.sh", NULL };
-static const char *LigDec[]		=	{ "/home/qj/Script/LightDec.sh", NULL };
+static const char *keynav[]		=	{ "/home/qj/Script/Software/keynav.sh", NULL };
+static const char *ranger[]		=	{ "/home/qj/Script/Software/st-ranger.sh", NULL };
+static const char *trayer[]		=	{ "/home/qj/Script/Software/trayer.sh", NULL };
+static const char *fcitx[]		=	{ "/home/qj/Script/Software/fcitx.sh", NULL };
+static const char *VolUp[]		=	{ "/home/qj/Script/Audio/vol-up.sh", NULL };
+static const char *VolDown[]	=	{ "/home/qj/Script/Audio/vol-down.sh", NULL };
+static const char *Mute[]		=	{ "/home/qj/Script/Audio/VolMute.sh", NULL };
+static const char *PlNext[]		=	{ "/home/qj/Script/Audio/Play-Next.sh", NULL };
+static const char *PlPrev[]		=	{ "/home/qj/Script/Audio/Play-Prev.sh", NULL };
+static const char *Pause[]		=	{ "/home/qj/Script/Audio/Play-pause.sh", NULL };
+static const char *Stop[]		=	{ "/home/qj/Script/Audio/Play-Stop.sh", NULL };
+static const char *Up1[]		=	{ "/home/qj/Script/Audio/vol-1u.sh", NULL };
+static const char *Dn1[]		=	{ "/home/qj/Script/Audio/vol-1d.sh", NULL };
+static const char *LigInc[]		=	{ "/home/qj/Script/Video/LightInc.sh", NULL };
+static const char *LigDec[]		=	{ "/home/qj/Script/Video/LightDec.sh", NULL };
+static const char *WpCh[]		=	{ "/home/qj/Script/Video/wp-change.sh", NULL };
+static const char *screenshot[]	=	{ "/home/qj/Script/Video/screenshot.sh", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
