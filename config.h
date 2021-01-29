@@ -7,7 +7,7 @@ static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Source Code Pro:size=12" };
+static const char *fonts[]          = { "SauceCodePro Nerd Font Mono:size=12" };
 static const char dmenufont[]       = "Source Code Pro:size=12";
 static const char col_gray1[]       = "#282a36";
 static const char col_gray2[]       = "#444444";
@@ -101,7 +101,7 @@ static const char *screenshot[]	=	{ "/home/q/Script/Video/screenshot.sh", NULL }
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,			XK_Return,	spawn,		{.v = termcmd } },
-	{ MODKEY,                       XK_space,	spawn,		{.v = dmenucmd } },
+	{ ControlMask,                       XK_space,	spawn,		{.v = dmenucmd } },
 	{ MODKEY|ShiftMask,				XK_space,	spawn,		{.v = fcitx } },
 	{ MODKEY,			XK_Insert,	spawn,		{.v = WpCh   } },
 	{ MODKEY,			XK_t,		spawn,		{.v = konsole } },
